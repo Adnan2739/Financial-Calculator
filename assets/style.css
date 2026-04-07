@@ -1,0 +1,206 @@
+/* Minimal CSS to style the calculator */
+.error-field { border: 2px solid red !important; background-color: #ffecec; }
+body #email-result-btn.disabled { opacity: 0.6; cursor: not-allowed; }
+body .res-box { padding: 0px; display: flex ; justify-content: center; flex-direction: column; align-items: flex-start; }
+body .results-card h4 { font-size: 25px; line-height: 1.4em; font-weight: 700; color: #fff; text-align: left; }
+body .results-card p { text-align: left; padding: 10px 0px 0; margin-bottom: 0px; font-size: 15px; line-height: 1.6em; }
+div#fin-calc-root {  width:100%; }
+.fcalc-wrap { display:flex; gap:24px; max-width:900px; margin:30px auto; background:#fff; padding:0; border-radius:10px; overflow:hidden; }
+/* .fcalc-form { width:55%; box-sizing:border-box; } */
+.results-card { width:45%; padding:30px; background:linear-gradient(135deg,#4e54c8,#2A385F); color:#fff; box-sizing:border-box; }
+.frow { margin-bottom:14px; }
+.frow label{ display:block; font-weight:600; margin-bottom:6px; color:#333; }
+.frow input, .frow select { width:100%; height:44px; padding:8px 10px; border-radius:6px; border:1px solid #ddd; box-sizing:border-box; }
+.btn { display:inline-block; padding:12px 18px; border-radius:6px; border:none; cursor:pointer; }
+#calculate-btn { background:#fff; color:rgba(42, 56, 95, 1); width:182px; font-weight:700; }
+#calculate-btn:hover { background:rgba(213, 17, 48, 1); color:#fff; width:182px; font-weight:700; }
+.results-grid { display: flex; gap:40px; border-radius: 0px; overflow: hidden; flex-direction: row; justify-content: center; align-items: center; padding: 25px 35px; }
+.res-box span { font-size: 15px; }
+/* .res-box:nth-child(1), .res-box:nth-child(2) { border-bottom:1px solid rgba(255,255,255,0.08); } */
+.summary-box { background:#fff; color:#222; padding:12px; border-radius:6px; margin:15px 0; }
+form#calculator-form select, form#calculator-form input { background-color: rgba(237, 240, 248, 0.1); color: #fff; }
+form#calculator-form select option { color: black; }
+body .firt-col { display: flex; justify-content: space-between; align-items: center; gap: 40px; padding: 25px 35px; border-bottom: 2px solid rgba(255, 255, 255, 0.1); }
+.interest-col { display: none !important; background: rgba(255, 255, 255, 0.05); border-radius: 10px; padding: 10px 20px; display: flex; justify-content: center; flex-direction: column; align-items: center; }
+.interest-col strong{ font-size: 25px; }
+.calculation-clumn { width: 50%; display: flex; justify-content: flex-start; gap: 20px; flex-direction: column; align-items: flex-start; }
+.graph-column { width: 50%; background: rgba(0, 0, 0, 0.15); padding: 30px 25px; border-radius: 10px; position: relative; }
+.result-two.column { display: flex; justify-content: space-between;  width: 100%; }
+.btn-container{ width: 100%; }
+body .form-col4 { display: none; }
+.circle{ position: relative; display: flex; justify-content: center; align-items: center; }
+.circular-graph { display: flex; flex-direction: row-reverse; gap: 20px; align-items: center; background: transparent; }
+.graph-legend div { display: flex; flex-direction: column; gap: 5px; }
+.circular-chart { width: 185px; height: 185px; transform: rotate(-90deg); }
+.circle-bg { fill: none; stroke: #2c3e50; stroke-width: 2.8; }
+.circle-progress { fill: none; stroke-width: 2.8; stroke-linecap: round; stroke: #3ad29f; transition: stroke-dasharray 0.8s ease; }
+.percentage { fill: #fff; font-size: 40px; text-anchor: middle; font-weight: 700; /* transform: rotate(90deg); */ position: absolute; /* top: 32%; left: 20%; transform: translate(50%, 50%); */ }
+.graph-legend { text-align: left; font-size: 14px; color: #fff; display: flex; flex-direction: column; justify-content: space-between; gap: 30px; }
+.color-box { display: inline-block; width: 20px; height: 20px; border-radius: 3px; }
+.color-box.paid { background: #3ad29f; }
+.color-box.remaining { background: #2c3e50; }
+.total-loan-amount{ position: absolute; top: 38px; left: 25px; display: flex; flex-direction: column; gap: 10px; width: 60px; font-size: 10px; line-height: 1.5em; }
+.amount-paid{ position: absolute; bottom: 38px; left: 25px; display: flex; flex-direction: column; gap: 10px; width: 80px; font-size: 10px; line-height: 1.5em; }
+[lang="ur"] .total-loan-amount{ position: absolute; top: 38px; right: 30px; display: flex; flex-direction: column; gap: 10px; width: 40px; font-size: 10px; line-height: 1.5em; }
+[lang="ur"] .amount-paid{ position: absolute; bottom: 38px; right: 30px; display: flex; flex-direction: column; gap: 10px; width: 80px; font-size: 10px; line-height: 1.5em; }
+/* html[lang="ur"] div#fin-calc-root { direction: ltr; } */
+
+
+/* Old CSS */
+/* assets/css/financial-calculator.css */
+body div#fin-calc-root { width: 100%; } 
+body .fcalc-wrap { display: flex ; justify-content: center; align-items: center; gap:45px; max-width:100%; margin:0 auto; padding: 0px; background: transparent; border-radius:10px;  }
+/* body .calculation-clumn strong{ line-height: 100%; } */
+body .fcalc-title { text-align:center; margin-bottom:8px; font-size:20px; }
+body .fcalc-userinfo { text-align:center; color:#666; font-size:13px; margin-bottom:12px; }
+body .fcalc-form { width: 50%; display:block;   display: flex; flex-direction: column; gap: 20px; }
+/* body .frow { margin-bottom:10px; } */
+body .frow label { display:block; font-weight:700; margin-bottom:6px; font-size: 15px; color: #fff; }
+body .frow input[type="number"], .frow input[type="text"], .frow select { height: 50px; width:100%; padding:8px 10px; border:1px solid transparent; border-radius:6px; box-sizing:border-box; }
+body .split { display:flex; gap:10px; }
+body .split > div { flex:1; }
+body button#email-result-btn { background: rgba(237, 240, 248, 0.1); color: #fff; font-weight: 700; width: 100%; border: none; width: calc(100% - 70px); margin: 0 auto;}
+body .btn { height: 43px; display: flex ; justify-content: center; align-items: center; background: rgba(42, 56, 95, 1); color:#fff; padding:14.5px 48px; border:none; border-radius:30px; cursor:pointer; font-weight: 700 !important; }
+body .fcalc-form .frow { width: 100%; }
+.fcalc-form .form-col1, .form-col2, .form-col3, .form-col4 { display: flex ; gap: 23px; row-gap: 20px; }
+/* .btn-outline { background:transparent; color:#2563eb; border:1px solid #2563eb; padding:8px 12px; border-radius:8px; cursor:pointer; margin-top:10px; } */
+body .results-card { padding: 0px; width: 50%; background: rgba(0, 0, 0, 0.1); color:#fff; border-radius:8px; padding-bottom: 40px; }
+body .results-card .results-card-heading-container h4.result-card-heading { font-size: 25px; line-height: 1.4em; font-weight: 700; color: #fff; text-align: center; }
+body .results-card .results-card-heading-container{ text-align: center; margin-bottom: 35px; line-height: 1.5em; padding: 10px 10px 0; }
+body .results-card .results-card-heading-container p{ padding-top: 10px; }
+body .col1, .col2 { display: flex ; justify-content: center; align-items: center; }
+body .res { width: 50%; justify-content: center; align-items: center; border: 1px solid rgba(255, 255, 255, 0.1); flex-direction: column; display:flex; justify-content:space-between; padding:42px 10px;}
+body .res strong { color: #fff; font-weight: 700; font-weight: bold; font-size: 25px; }
+body .fmodal { position:fixed; inset:0; display:flex; align-items:center; justify-content:center; background:rgba(0,0,0,0.5); z-index:9999; }
+body .fmodal.hidden { display:none; }
+body .fmodal-content { background:#fff; padding:18px; border-radius:8px; width:100%; max-width:450px; position:relative; }
+body .fmodal-content h3{ font-size: 25px; line-height: 1.4em; font-weight: 700; text-align: center; margin-bottom: 20px; }
+body form#email-form label { font-weight: 700; }
+body form#email-form input { height: 50px; width: 100%; padding: 8px 10px; border: 1px solid transparent; border-radius: 6px; }
+body .modal-close { position:absolute; right:10px; top:6px; border:none; background:transparent; font-size:22px !important; cursor:pointer; border-radius: 5px; padding: 5px 10px; background-color: var(--red-theme-color); }
+body .summary-box { background:#f7f7f7; padding:10px; border-radius:6px; margin:8px 0; font-size:14px; }
+body .status-message { margin-top:8px; font-weight:600; }
+body .status-message.hidden { display:none; }
+body .status-message.success { color:green; }
+body .status-message.error { color:#c0392b; }
+body .fcalc-form .frow input[type="number"]:focus,
+body .fcalc-form .frow input[type="text"]:focus,
+body .fcalc-form .frow select:focus { border-color: #2A385F; /* your color */ outline: none; /* optional: removes default blue outline */ }
+body form#email-form{ display: flex; flex-direction: column; }
+body .frow.button-div { display: flex ; justify-content: space-between; align-items: center; margin-top: 30px; gap: 20px; position: relative; }
+body .frow.button-div .error-msg { position: absolute; top: 30px; font-weight: 300; }
+label.checkbox-label input[type="checkbox"] { margin-right: 7px; width: 20px; height: 20px; }
+span.checkbox { font-weight: 400; font-size: 15px; line-height: 1.6em; color: #fff; }
+.error-msg { text-align: left; }
+[lang="ur"] .error-msg { text-align: right; }
+
+@media (max-width:1700px){
+  .circular-chart{ width: 135px; height: 155px; }
+  body .frow label { display: flex; align-items: flex-start !important; }
+  /* body .frow.button-div .error-msg { top: 45px; } */
+}
+@media (max-width:1550px){
+body .circular-chart{ width: 120px; height: 135px; }
+body .percentage { fill: #fff; font-size: 30px;}
+ 
+}
+@media (max-width:1440px){
+body .circular-chart{ width: 120px; height: 120px; }
+body .total-loan-amount{ top: 20px; left: 20px; }
+body .amount-paid{ bottom: 20px; left: 20px; }
+body .graph-column{ padding: 40px 20px; }
+[lang="ur"] .total-loan-amount, [lang="ur"] .amount-paid { right: 20px; width: 40px; text-align: right;}
+body .calculation-clumn{ width: 55%; }
+body label.checkbox-label span.checkbox { top: -4px; }
+body .frow.button-div .checkbox-label { display: flex; align-items: flex-start; }
+body .percentage {font-size: 30px;}
+
+
+}
+@media (max-width:1180px){
+[lang="ur"] .total-loan-amount, [lang="ur"] .amount-paid { right: 20px; width: 60px; text-align: right;}
+body .circular-chart { width: 100px; height: 120px; }
+body .circular-chart{ width: 185px; height: 185px; }
+body .total-loan-amount{ top: 40px; left: 45px; }
+body .amount-paid{ bottom: 40px; left: 45px; }
+body .res-box { padding: 0px; }
+body .form-col2{ flex-direction: row; }
+body .fcalc-form{ width: 100%; }
+body .results-card{ width: 100%; }
+body .fcalc-wrap { padding: 0px; flex-direction: column; }
+body .fcalc-wrap { gap: 30px; }
+body .circular-chart{ width: 185px; height: 185px; }
+body .graph-column{ padding: 40px 45px;  width: 45%;}
+body .calculation-clumn{ width: 55%; }
+body .percentage {font-size: 40px;}
+}
+
+@media (max-width:1024px){
+body .calculator-line{ text-align: center; }
+body .results-card .firt-col{ align-items: flex-start; padding: 30px 40px; }
+body .graph-column { padding: 25px 35px; width: 50%;}
+body .calculation-clumn{ width: 50%; }
+body .results-grid{ column-gap: 60px;  padding: 30px 40px; }
+body button#email-result-btn{ width: calc(100% - 80px); }
+  /* body .frow.button-div .error-msg{ top: 35px; } */
+}
+@media (max-width:900px){
+body .graph-column{ padding: 40px 30px;  width: 45%;}
+body .circular-chart{ width: 155px; height: 155px; }
+body .total-loan-amount{ top: 40px; left: 30px; }
+body .amount-paid{ bottom: 40px; left: 30px; } 
+}
+
+@media (max-width:800px){ 
+body .fcalc-wrap { flex-direction:column; } 
+body .fcalc-form, .results-card{ width:100%; } 
+/* .split{flex-direction:column;}  */
+body .results-card{margin-top:12px;} 
+}
+
+@media (max-width:768px){
+body .fcalc-wrap { padding: 0px; flex-direction: column; }
+body .firt-col{ padding: 15px; }
+body .results-grid{ flex-direction: column; padding: 20px; gap: 30px; }
+body .graph-column{ width: 100%; padding: 40px 35px; }
+body .total-loan-amount{ top: 40px; left: 35px; text-align: left; }
+body .amount-paid{ bottom: 40px; left: 35px; text-align: left; }
+body .circular-chart{ width: 185px; height: 185px; }
+body .percentage { font-size: 30px;}
+body .calculation-clumn{ width: 100%; }
+body .interest-col strong { font-size: 18px; }
+body .frow.button-div { margin-top: 0px; }
+body .frow.button-div .error-msg { top: 20px;}
+body label.checkbox-label span.checkbox{ text-align: left; }
+body .results-card .firt-col {padding: 20px;}
+
+
+body .frow.button-div { flex-direction: column; align-items: flex-start; justify-content: center; }
+body .btn{ width: 100%; }
+#calculate-btn { width: 100%; }
+#calculate-btn:hover { background:rgba(213, 17, 48, 1); color:#fff; width:100%; font-weight:700; }
+body .results-card {padding-bottom: 20px}
+body button#email-result-btn{ width: calc(100% - 40px); }
+body .res-box { padding: 0px }
+}
+
+@media (max-width:677px){
+body .fcalc-form .form-col1, .form-col2, .form-col3, .form-col4 { flex-direction: column;}
+body .form-col2 { flex-direction: column; }
+body .fcalc-form{ margin-bottom: 0; }
+body .results-card .results-card-heading-container{ padding: 0 30px; }
+body .results-card .results-card-heading-container h4.result-card-heading{ font-size: 18px; }   
+}
+
+@media (max-width:480px){
+body .result-two.column{ flex-direction: column; gap: 20px; }
+body .interest-col{ width: 40%; padding: 17px 35px; }
+body .frow.button-div { gap:30px }
+  /* body .frow.button-div .error-msg { top: 45px; } */
+}
+@media (max-width:400px){
+body .graph-column { width: 100%; padding: 20px 25px; }
+body .circular-chart { width: 155px; height: 155px; }
+body .total-loan-amount { top: 20px; left: 25px;}
+body .amount-paid { bottom: 20px; left: 25px;}
+}

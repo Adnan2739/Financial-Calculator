@@ -1,0 +1,162 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Financial Calculator 2.3.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-22 00:00+0000\n"
+"PO-Revision-Date: 2025-12-22 16:04+0500\n"
+"Last-Translator: \n"
+"Language-Team: Urdu\n"
+"Language: ur_PK\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.8\n"
+
+#: php
+msgid "Calculator Settings"
+msgstr "کیلکولیٹر کی ترتیبات"
+
+msgid "From Email"
+msgstr "ای میل بھیجنے والا"
+
+msgid "Interest Rate (%)"
+msgstr "سود کی شرح (%)"
+
+msgid "Asset Types (comma separated)"
+msgstr "اثاثے کی اقسام (کامہ سے جدا)"
+
+msgid "Asset Models (comma separated)"
+msgstr "اثاثے کے ماڈلز (کامہ سے جدا)"
+
+msgid "Down Payment Options (%)"
+msgstr "ابتدائی ادائیگی کے اختیارات (%)"
+
+msgid "Tenor Years Options"
+msgstr "مدت کے اختیارات (سال)"
+
+msgid "Financial Calculator"
+msgstr "مالیاتی کیلکولیٹر"
+
+msgid "Use shortcode %s to display calculator."
+msgstr "کیلکولیٹر دکھانے کے لیے شارٹ کوڈ %s استعمال کریں۔"
+
+msgid "Logs"
+msgstr "لاگز"
+
+msgid "No logs yet."
+msgstr "ابھی تک کوئی لاگز موجود نہیں۔"
+
+msgid "Are you sure you want to delete this log?"
+msgstr "کیا آپ واقعی اس لاگ کو حذف کرنا چاہتے ہیں؟"
+
+msgid "Deleting..."
+msgstr "حذف کیا جا رہا ہے۔۔۔"
+
+msgid "Delete"
+msgstr "حذف کریں"
+
+msgid "Unauthorized"
+msgstr "غیر مجاز"
+
+msgid "Could not delete record."
+msgstr "ریکارڈ حذف نہیں کیا جا سکا۔"
+
+msgid "Invalid ID."
+msgstr "غلط شناختی نمبر۔"
+
+msgid "Type of Asset"
+msgstr "اثاثے کی قسم"
+
+msgid "Asset Model"
+msgstr "اثاثے کا ماڈل"
+
+msgid "Value of Asset (Rs)"
+msgstr "اثاثے کی قیمت (روپے)"
+
+msgid "Down Payment (%)"
+msgstr "ابتدائی ادائیگی (%)"
+
+msgid "Tenor (Years)"
+msgstr "مدت (سال)"
+
+msgid "Net Lease / Finance Amount (Rs)"
+msgstr "نیٹ لیز / مالی رقم (روپے)"
+
+msgid "Installment Amount (Monthly) (Rs)"
+msgstr "قسط کی رقم (ماہانہ) (روپے)"
+
+msgid "Terms and Conditions Applied"
+msgstr "شرائط و ضوابط لاگو"
+
+msgid "Calculate"
+msgstr "حساب کریں"
+
+msgid "Result"
+msgstr "نتیجہ"
+
+msgid "Your calculation results are displayed below"
+msgstr "آپ کے حساب کے نتائج نیچے دکھائے گئے ہیں"
+
+msgid "Interest"
+msgstr "سود"
+
+msgid "Down Payment (Rs)"
+msgstr "ابتدائی ادائیگی (روپے)"
+
+msgid "Tenor"
+msgstr "مدت"
+
+msgid "Monthly Installment"
+msgstr "ماہانہ قسط"
+
+msgid "Total Loan Amount"
+msgstr "کل قرض کی رقم"
+
+msgid "Amount Paid"
+msgstr "ادا شدہ رقم"
+
+msgid "Email this Result"
+msgstr "یہ نتیجہ ای میل کریں"
+
+msgid "Email Your Results"
+msgstr "اپنے نتائج ای میل کریں"
+
+msgid "Your Name"
+msgstr "آپ کا نام"
+
+msgid "Enter your name"
+msgstr "اپنا نام درج کریں"
+
+msgid "Your Email"
+msgstr "آپ کا ای میل"
+
+msgid "Enter your email"
+msgstr "اپنا ای میل درج کریں"
+
+msgid "Send Email"
+msgstr "ای میل بھیجیں"
+
+msgid "This field is required"
+msgstr "یہ فیلڈ لازمی ہے"
+
+msgid "Please agree to the terms"
+msgstr "براہ کرم شرائط سے متفق ہوں"
+
+msgid "Email sent successfully!"
+msgstr "ای میل کامیابی سے بھیج دی گئی!"
+
+msgid "Server error"
+msgstr "سرور میں خرابی"
+
+msgid "AJAX error - see console"
+msgstr "ایجیکس خرابی - کنسول دیکھیں"
+
+msgid "yr"
+msgstr "سال"
+
+msgid "yrs"
+msgstr "سال"
+
+msgid "Rs"
+msgstr "روپے"
