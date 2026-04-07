@@ -3,7 +3,7 @@
  * Plugin Name: Financial Calculator
  * Description: Custom financial calculator plugin with asset financing fields, modern UI, and log management.
  * Version: 2.3.0
- * Author: Genetech Solutions
+ * Author: Muhammad Adnan
  * Text Domain: fc-calculator
  * Domain Path: /languages
  */
